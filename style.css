@@ -1,0 +1,565 @@
+/* Style général de la page */
+body {
+  font-family: Arial, sans-serif; /* Police simple et lisible */
+  margin: 0;                      /* Supprime les marges par défaut sur toute la page */
+  line-height: 1.6;               /* Améliore la lisibilité du texte */
+}
+
+/* EN-TETE */
+header {
+  padding: 15px;                  /* Espace intérieur */
+  border-bottom: 1px solid black; /* Ligne de séparation */
+}
+
+/* Conteneur du logo du haut */
+.logo-top {
+  text-align: center;     /*  positionne le logo en haut au centre */
+  margin-bottom: 5px;   /* Espace entre logo et titre */
+}
+
+/* Logo 1 */
+#logo1 {
+  width: 80px;     /* Taille du logo */
+  height: auto;    /* Conserve les proportions */
+}
+
+/* Titre principal */
+h1 {
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+
+  background-color: #3eb6fc; /* bleu claire */
+  color: #020c13;            /* Texte en bleu foncé pour le contraste */
+
+}
+  
+h3 ,
+h2 {
+    text-align: center;
+    color: #3eb6fc; /* bleu */
+     
+}
+
+/* Menu de navigation */
+nav {
+  display: flex;                 /* Active Flexbox */
+  justify-content: center;       /* Centre les liens horizontalement */
+  gap: 15px;                     /* Espacement entre les liens */
+  background-color: #020c13;
+}
+
+/* Liens du menu */
+nav a {
+  text-decoration: none;          /* Supprime le soulignement */
+  text-align: center;             /* Centrer les liens de navigation */
+  color: white;                 /* Définit la couleur du texte */
+  border: 1px solid #3eb6fc;      /* ajoute une bordure autours de élément */
+  padding: 6px 10px;               /* ajoute de lespace intérieur entre le texte la bordure */
+  display: inline-block;          /* permet de rester sur la meme ligne tout en respectant les propriétés appliqués */
+  transition: all 0.3s ease;     /* Animation douce */
+  text-align: center;
+}
+
+/* Effet au survol */
+nav a:hover {
+  background-color:#3eb6fc;     /* bleu,claire */
+  color:  #020c13;             /*bleu foncé*/
+}
+
+p{
+  text-align: justify;
+  margin: 20PX;
+}
+
+/* Espacement entre les sections */
+section {
+  margin-bottom: 25px;
+  background-color: #f4f9fc;
+}
+
+/* SECTION INTRO : texte à gauche / image à droite */
+
+/* Section principale */
+.intro{
+  min-height: 100vh;          /* La section occupe au minimum toute la hauteur de l’écran */
+  padding: 40px;              /* Ajoute de l’espace intérieur pour aérer le contenu */
+}
+
+/* Titre principal de la section */
+.intro-title{
+  text-align: center;         /* Centre le titre horizontalement */
+  margin-bottom: 30px;        /* Espace entre le titre et le contenu */
+  color: #3eb6fc;          /* bleu,claire */
+}
+
+/* Conteneur du texte et de l’image */
+.intro-content{
+  display: flex;              /* Active Flexbox pour aligner les éléments sur une même ligne */
+  align-items: center;          /* Aligne verticalement le texte et l’image */
+  justify-content: space-between;   /* Répartit l’espace entre le texte et l’image */
+  gap: 40px;                      /* Espace entre les deux blocs */
+}
+
+/* Bloc texte */
+.intro-text{
+  flex: 1;                    /* Le texte occupe une part égale de l’espace disponible */
+}
+
+/* Texte de présentation */
+.intro-text p{
+  text-align: justify;        /* Justifie le texte pour un rendu académique */
+  max-width: 650px;           /* Limite la largeur pour améliorer la lisibilité */
+}
+
+/* Bloc image */
+.intro-image{
+  flex: 1;                    /* L’image occupe la même largeur que le texte */
+  display: flex;
+  justify-content: flex-end;  /* Place l’image à droite de la section */
+}
+
+/* Image */
+.intro-image img{
+  width: 100%;                /* Image responsive */
+  max-width: 520px;           /* Taille maximale contrôlée */
+  height: auto;               /* Conserve les proportions de l’image */
+  margin: 0;                  /* Empêche le centrage automatique (corrige le désalignement) */
+  display: block;             /* Supprime les espaces parasites autour de l’image */
+  border-radius: 10px;        /* Coins arrondis pour un rendu moderne */
+  border: 3px solid #3eb6fc;     /* bleu,claire */;  /* Bordure verte cohérente avec la charte graphique */
+}
+
+/* RESPONSIVE : ADAPTATION AUX PETITS ÉCRANS */
+
+@media (max-width: 900px){
+  .intro-content{
+    flex-direction: column;   /* Sur mobile : le texte passe au-dessus de l’image */
+  }
+
+  .intro-image{
+    justify-content: center;  /* Centre l’image sur les petits écrans */
+  }
+}
+
+/* Liste des objectifs présentée sous forme de schéma */
+.objectif-schema {
+  list-style: none;      /* Supprime les puces par défaut de la liste (<ul>) */
+  padding: 0;            /* Supprime le retrait intérieur par défaut de la liste */
+  margin-top: 20px;      /* Ajoute un espace au-dessus pour aérer la section */
+}
+
+/* Style de chaque élément de la liste */
+.objectif-schema li {
+  padding: 12px;                         /* Espace intérieur pour rendre le contenu plus lisible */
+  margin-bottom: 10px;                  /* Espace entre chaque objectif */
+  background-color: #f5f9ff;            /* Fond clair pour distinguer chaque bloc */
+  border-left: 4px solid #3eb6fc;        /* Bordure colorée à gauche pour structurer visuellement */
+}
+
+    /* page 2 de mon site */
+
+/*  BLOCS DE CONTENU */
+.bloc {
+  padding: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #f4f9fc;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+/* Titres de sections */
+.page-title h2,
+.bloc h3,
+.bloc h2 {
+  margin-top: 0;
+  color: #3eb6fc; /* bleu */
+  text-align: center;
+}
+
+/* Images dans la page */
+
+figure {
+  margin: 15px 0;
+  text-align: center; /* Centre l’image et la source */
+}
+
+figcaption {
+  font-size: 12px;        /* Texte plus petit */
+  font-style: italic;    /* Style académique */
+  color: #555;            /* Gris discret */
+  margin-top: 5px;
+}
+.img-page {
+  border: 3px solid#3eb6fc; /* bleu */
+  width: 600px;              /* Largeur identique sur toutes les pages */
+  height: auto;             /* gardent les memes proportions */
+  max-width: 100%;           /* Rend l'image responsive sur petit écran */
+  border-radius: 10px;       /* Coins arrondis (plus joli) */
+  object-fit: cover;         /* IMPORTANT : évite la déformation (recadre proprement) */
+  display: block;            /* Évite les petits espaces bizarres autour des images */
+  margin: 10px auto 0;       /* Centre l’image */
+}
+
+/* Alignement texte + image sur une même ligne */
+.bloc-contenu {
+  display: flex;              /* Active Flexbox */
+  gap: 20px;                  /* Espace entre texte et image */
+  align-items: center;        /* Alignement vertical */
+}
+
+/* Texte à gauche */
+.bloc-texte {
+  flex: 1;                    /* Prend plus de place */
+}
+
+/* Image à droite */
+.bloc-image {
+  flex: 1;                  /* Image un peu plus petite */
+  text-align: center;
+}
+
+/* Image ajustée */
+.bloc-image img {
+  width: 100%;
+  max-width: 500px;           /* Taille réduite */
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive : retour en colonne sur petit écran */
+@media (max-width: 768px) {
+  .bloc-contenu {
+    flex-direction: column;   /* Texte au-dessus, image en dessous */
+  }
+}
+
+
+
+/* TABLEAU OBJECTIFS / INNOVATIONS */
+
+/* Conteneur qui permet le scroll horizontal sur mobile */
+.table-wrapper {
+  max-width: 900px;           /* même largeur que tes blocs */
+  margin: 15px auto;          /* centre le conteneur */
+  overflow-x: auto;           /* scroll si le tableau dépasse */
+  -webkit-overflow-scrolling: touch; /* scroll fluide sur iPhone */
+}
+
+/* Style général du tableau */
+.table-obj {
+  width: 100%;                /* largeur normale */
+  border-collapse: collapse;  /* fusion des bordures */
+  min-width: 700px;           /* empêche le tableau d’être écrasé (ajuste si besoin) */
+}
+
+/* Cellules */
+.table-obj th,
+.table-obj td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Titres des colonnes */
+.table-obj th {
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+
+/* PAGE 3 DU SITE*/
+
+/* Liens rapides (page 3) */
+.quick-links {
+  text-align: center;      /* Centre la liste des ancres */
+  margin-top: 10px;
+  background-color: #020c13;
+}
+
+.quick-links a {
+  color: #020c13;          /* blanc */
+  font-weight: bold;       /*met le texte en gras afin de le rendre plus visible.*/
+  text-decoration: none;   /* Enlève le soulignement */
+  background-color: #3eb6fc;
+}
+
+.quick-links a:hover {
+  text-decoration: underline; /* Souligné au survol */
+  background-color: #f4f9fc;
+}
+
+/* Conteneur texte + image (page infrastructures) */
+.bloc-content {
+  display: flex;
+  gap: 30px;                /* espace entre texte et image */
+  align-items: center;      /* alignement vertical */
+}
+
+/* Colonne texte */
+.bloc-text {
+  flex: 1;                  /* prend plus d’espace */
+}
+
+/* Colonne image */
+.bloc-image {
+  flex: 1;
+  text-align: center;
+}
+
+/* Image un peu plus petite que sur mobile */
+.bloc-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive : retour en colonne sur mobile */
+@media (max-width: 800px) {
+  .bloc-content {
+    flex-direction: column;
+  }
+}
+
+
+/* PAGE 4 DU SITE*/
+
+/* Conteneur des 2 cartes */
+.cartes-container{
+  display: flex;              /* met les images sur une meme ligne */
+  justify-content: center;    /* centre les images */
+  gap: 20px;                  /* espace entre les deux cartes */
+  align-items: flex-start;    /* aligne en haut */
+}
+
+/* Images des cartes (spécifique aux cartes) */
+.carte-img{
+  width: 48%;                 /* 2 images sur une ligne, petite largeur*/
+  height: auto;               /* garde les proportions */
+  border: 3px solid #3eb6fc;  /* même style que les autres images */
+  border-radius: 10px;
+  display: block;
+}
+
+/* Sur petit écran : elles passent en colonne, se superpoeront l'une sur l'autre */
+@media (max-width: 700px){
+  .cartes-container{
+    flex-direction: column;   /* en colonne*/
+  }
+  .carte-img{
+    width: 100%;
+  }
+}
+
+/* SECTION ITINERAIRE*/
+
+.itineraire-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin: 30px 0;
+}
+
+/* Texte à gauche */
+.itineraire-texte{
+  flex: 1;
+  text-align: left;
+}
+
+/* Image à droite */
+.itineraire-image{
+  flex: 0 0 300px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.itineraire-image img{
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  border: 3px solid #3eb6fc;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 768px){
+  .itineraire-row{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .itineraire-image{
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .itineraire-image img{
+    max-width: 100%;
+  }
+}
+
+/* SECTION FORMULAIRE CONTACT */
+
+/* Conteneur du formulaire */
+.contact-form {
+  max-width: 500px;      /* Limite la largeur du formulaire pour garder une bonne lisibilité */
+  margin: 0 auto;        /* Centre le formulaire horizontalement */
+}
+
+/* Labels des champs (Nom, Prénom, Email, Message...) */
+.contact-form label {
+  display: block;        /* Met chaque label sur sa propre ligne */
+  margin-top: 15px;      /* Espace entre les différents champs */
+  font-weight: bold;     /* Met en valeur le nom du champ */
+}
+
+/* Champs de saisie (ATTENTION : ici ça vise tous les inputs, donc aussi checkbox si on ne corrige pas après) */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;           /* Les champs texte prennent toute la largeur (bien pour input text/email/textarea) */
+  padding: 8px;          /* Confort de saisie */
+  margin-top: 5px;       /* Petit espace entre label et champ */
+  border: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;   /* Coins arrondis */
+}
+
+/* ✅ CORRECTION IMPORTANTE : annule width:100% pour la checkbox */
+.contact-form input[type="checkbox"] {
+  width: auto;           /* La checkbox garde sa taille normale */
+  padding: 0;            /* Pas de padding */
+  margin: 0;             /* On gère l'espacement avec "gap" dans flex */
+  border-radius: 0;      /* Pas utile sur une checkbox */
+}
+
+/* Bloc conditions d'utilisation : checkbox + texte sur la même ligne */
+.contact-form .conditions-label {
+  display: flex;         /* Met la checkbox et le texte côte à côte */
+  align-items: center;   /* Aligne verticalement la checkbox avec le texte */
+  gap: 8px;              /* Espace entre la checkbox et le texte */
+  margin-top: 15px;
+  font-size: 12px;
+  font-weight: normal;  /* Important : sinon ça reprend le "bold" du label général */
+}
+
+/* Lien des conditions */
+.contact-form .conditions-label .conditions-link {
+  color: #5238d4;        /* Couleur de lien */
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline;       /* Empêche le lien de se comporter comme un bloc */
+}
+
+/* Astérisque rouge */
+.contact-form .conditions-label .star {
+  color: red;
+  margin-left: 2px;
+}
+
+/* Bouton Envoyer */
+.contact-form input[type="submit"] {
+  margin-top: 20px;
+  background-color: #3eb6fc; /* bleu */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Effet au survol */
+.contact-form input[type="submit"]:hover {
+  background-color: #020c13; /* couleur foncée */
+}
+
+/* Contenu du footer */
+.footer-content {
+  display: flex;
+  flex-direction: column;   /* Empile les éléments verticalement */
+  gap: 15px;                /* Espace entre texte et bas du footer */
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between; /* gauche / droite */
+  align-items: center;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  font-style: italic;
+  text-align: left; /* IMPORTANT */
+  margin: 0;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;  /* Centre horizontalement */
+  gap: 15px;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+.footer-nav a:hover {
+  text-decoration: none;
+}
+/* Logo du bas */
+#logo2 {
+  width: 80px;   /* Taille du logo */
+  height: auto;
+}
+
+/*  PIED DE PAGE  */
+footer {
+  font-style: italic;              /* Texte en italique */
+  font-size: 12px;                 /* Taille du texte */
+  font-family: Arial, sans-serif;    /* Police du texte */
+  font-weight: normal;              /* Texte NON gras */
+  padding: 15px;
+  background-color: #020c13; /* bleu */
+  color: white;
+  border-top: 1px solid black;   /* Ajoute une bordure uniquement en haut du footer */
+  margin-top: 30px;                /* Ajoute un espace extérieur au-dessus du footer
+                                   Éloigne le footer du contenu précédent*/
+}
+ 
+/*  RESPONSIVE  */
+/* Adaptation pour les petits écrans */
+@media (max-width: 600px) {    /* Applique les styles uniquement si la largeur de l’écran est inférieure ou égale à 600 pixels */
+  nav {
+    flex-direction: column;   /* Met le menu en colonne */
+    align-items: center;      /* Centre */
+  }
+
+  nav a {
+    margin: 6px 0;           /* Ajoute un espace vertical entre les liens
+                                        6px : en haut et en bas
+                                        0 : pas d’espace à gauche et à droite */
+  }
+
+  .footer-content {
+  flex-direction: column;   /* Les éléments du footer sont empilés verticalement (texte au-dessus, logo en dessous) */
+  gap: 10px;                /* Ajoute un espace de 10px entre chaque élément du footer */
+  text-align: center;       /* Centre le texte et les éléments horizontalement */
+  }
+  .footer-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-bottom {
+    flex-direction: column;   /* Empile */
+    align-items: center;      /* Centre */
+    gap: 10px;
+  }
+
+  .footer-copyright {
+    text-align: center;
+  }
+
+}

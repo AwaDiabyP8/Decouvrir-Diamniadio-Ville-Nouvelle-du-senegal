@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Responsive : adapte l’affichage aux mobiles -->
+
+  <title> Localisation, Itinéraire & contact </title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+
+  <header>
+
+    
+    <div class="logo-top">
+      <img src="image/logo.png" alt="Logo Paris 8" id="logo1">
+      <!-- Image : src = chemin, alt = description, id = style CSS -->
+    </div>
+
+    <!-- Titre principal de la page -->
+    <h1>Localisation, Itinéraire et contact</h1>
+
+    <!-- Menu de navigation (simple, sans sous-menus) -->
+    <nav>
+      <a href="accueil.html">Accueil</a> 
+      <a href="histoire.html">Histoire & projet urbain</a> 
+      <a href="infrastructures.html">Infrastructures</a> 
+      <a href="contact.html">Localisation & Contact</a>
+    </nav>
+
+  </header>
+
+  <!--  CONTENU PRINCIPAL  -->
+  <main>
+
+<!-- SECTION 1 : localisation de la ville de Diamaniadio -->
+    <section class="bloc">
+      <h2>Situation géographique de la ville nouvelle de Diamniadio</h2>
+
+      <p>
+        Diamniadio est située à environ 30 kilomètres à l’est de Dakar, au cœur d’un espace stratégique de la région dakaroise. 
+        Sa localisation, à proximité immédiate de l’autoroute A1, du Train Express Régional (TER) 
+        et de l’Aéroport International Blaise Diagne (AIBD), lui confère une excellente accessibilité 
+        et une forte connectivité aux principaux pôles économiques du pays.
+        Cette position géographique privilégiée favorise son intégration progressive dans les dynamiques métropolitaines, 
+        renforce son attractivité pour les investissements publics et privés, 
+        et explique son rôle croissant dans l’organisation urbaine, économique et logistique de la région de Dakar.
+      </p>
+
+          <!-- Bloc image + légende -->
+      <figure class="cartes">
+        <!-- Conteneur des deux cartes -->
+        <div class="cartes-container">
+
+          <img class="carte-img" 
+              src="image/Carte-Diamniadio.jpg"
+              alt="Carte de localisation de Diamniadio sur la carte du Sénégal">
+
+          <img class="carte-img"
+              src="image/Carte-Diamniadio(1).jpg"
+              alt="Carte de localisation de Diamniadio dans la région de Dakar">
+
+        </div>
+
+        <!-- Légende commune aux deux cartes -->
+        <figcaption>
+          Cartes de localisation de la ville de Diamniadio à l’échelle nationale et régionale.  
+          Source : OpenStreetMap.
+        </figcaption>
+      </figure>
+    </section>
+
+        <!-- SECTION 2 : Accès et itinéraires vers Diamniadio (depuis Dakar) -->
+    <section class="bloc">
+      <h2>Comment se rendre à Diamniadio depuis Dakar ?</h2>
+
+      <p>
+        Depuis Dakar, plusieurs moyens permettent de rejoindre Diamniadio selon le budget,
+        le temps disponible et le niveau de confort souhaité.
+      </p>
+
+      <!-- 1) Voiture -->
+      <div class="itineraire-row">
+        <div class="itineraire-texte">
+          <h3>🚗 Par la route (voiture / taxi / VTC)</h3>
+          <p>
+            L’itinéraire le plus rapide consiste à emprunter l’autoroute A1 en direction de
+            Diamniadio. Le trajet dure généralement <strong>30 à 45 minutes</strong> selon la circulation.
+          </p>
+          <ul>
+            <li><strong>Point de départ :</strong> Dakar</li>
+            <li><strong>Trajet :</strong> Autoroute A1</li>
+            <li><strong>Arrivée :</strong> Diamniadio</li>
+          </ul>
+        </div>
+
+        <div class="itineraire-image">
+          <img src="image/autoroute A1.jpg" alt="Autoroute A1 reliant Dakar à Diamniadio">
+        </div>
+      </div>
+
+      <!-- 2) TER -->
+      <div class="itineraire-row">
+        <div class="itineraire-texte">
+          <h3>🚆 Par le Train Express Régional (TER)</h3>
+          <p>
+            Le TER relie Dakar à Diamniadio avec plusieurs arrêts. C’est un moyen de transport
+            pratique, régulier et souvent plus fiable aux heures de pointe.
+            Le trajet dure environ <strong>45 minutes</strong>.
+          </p>
+          <ul>
+            <li><strong>Avantage :</strong> temps plus stable</li>
+            <li><strong>Idéal pour :</strong> déplacements quotidiens</li>
+          </ul>
+        </div>
+
+        <div class="itineraire-image">
+          <img src="image/TER.jpg" alt="Train Express Régional (TER) vers Diamniadio">
+        </div>
+      </div>
+
+      <!-- 3) Bus / transports en commun -->
+      <div class="itineraire-row">
+        <div class="itineraire-texte">
+          <h3>🚌 Par les transports en commun (bus / cars rapides / taxis collectifs)</h3>
+          <p>
+            Des bus et véhicules de transport collectif assurent la liaison entre Dakar et Diamniadio.
+            Cette option est souvent plus économique, mais peut être plus longue à cause des arrêts
+            et de la circulation.
+          </p>
+          <ul>
+            <li><strong>Avantage :</strong> coût réduit</li>
+            <li><strong>Inconvénient :</strong> durée variable</li>
+          </ul>
+        </div>
+
+        <div class="itineraire-image">
+          <img src="image/car.jpg" alt="Transport en commun depuis Dakar vers Diamniadio">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION 3 : CONTACT -->
+      
+    <section class="bloc">
+
+      <!-- Titre de la section -->
+      <h2>Contact</h2>
+     
+      <!-- Formulaire : structure simple -->
+      <form class="contact-form">
+
+        <!-- Champ Nom -->
+        <label>Nom</label>
+        <input type="text" value="" required>
+
+        <!-- Champ Prénom -->
+        <label>Prénom</label>
+        <input type="text" value="" required>
+
+        <!-- Champ Email -->
+        <label>Email</label>
+        <input type="email" value="" required>
+
+        <!-- Champ Message -->
+        <label>Message</label>
+        <textarea rows="5" required>Votre message</textarea>
+
+        <!-- Acceptation des conditions (exercice pédagogique) -->
+        <!-- Label englobant la case à cocher et le texte -->
+        <label class="conditions-label">
+
+          <!-- Case à cocher -->
+          <input type="checkbox" name="conditions">
+
+          <!-- Conteneur du texte -->
+            <!-- Lien des conditions d’utilisation -->
+            <!-- La classe conditions-link sert à appliquer le style CSS -->
+            <a href="#" class="conditions-link">
+              J’accepte les conditions d’utilisation des données
+            </a>
+
+            <!-- Astérisque rouge indiquant un champ obligatoire -->
+            <span class="star">*</span>
+        </label>
+
+        <!-- Bouton d’envoi -->
+        <input type="submit" value="Envoyer">
+
+      </form>
+    </section>
+
+
+  </main>
+
+  <!-- PIED DE PAGE -->
+  <footer>
+    <div class="footer-content">
+      <p class="footer-text">
+      Diamniadio, une ville en pleine transformation au cœur du développement du Sénégal
+      </p>
+
+      <!-- Navigation du pied de page -->
+    <nav class="footer-nav">
+      <a href="accueil.html">Accueil</a>
+      <a href="histoire.html">Histoire & projet urbain</a>
+      <a href="infrastructures.html">Infrastructures</a>
+      <a href="contact.html">Localisation & Contact</a>
+    </nav>
+        
+    <!-- Ligne basse -->
+     <div class="footer-bottom">
+        <p class="footer-copyright">
+        © 2026 – Site réalisé dans le cadre d’un projet universitaire. Tous droits réservés.
+        </p>
+        <div class="logo-bottom">
+          <img src="image/logoSen.jpg" alt="Logo du Sénégal" id="logo2">
+        </div> 
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
